@@ -333,4 +333,30 @@ or highlighted text:</p>
 <pre><code>Example:
 &lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
 </code></pre>
+<h1 id="html--quotation">HTML  Quotation</h1>
+<h2 id="html-q-for-short-quotations">HTML <code>&lt;q&gt;</code> for Short Quotations</h2>
+<p>The HTML  <code>&lt;q&gt;</code>  element defines a short quotation.</p>
+<p>Browsers usually insert quotation marks around the  <code>&lt;q&gt;</code>  element.</p>
+<pre><code>Example:
+&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+</code></pre>
+<h2 id="html-blockquote-for-quotation">HTML <code>&lt;blockquote&gt;</code> for Quotation</h2>
+<p>The HTML  <code>&lt;blockquote&gt;</code>  element defines a section that is quoted from another source.</p>
+<p>Browsers usually indent  <code>&lt;blockquote&gt;</code>  elements.</p>
+<pre><code>Example:
+&lt;p&gt;Browsers usually indent blockquote elements.&lt;/p&gt;
+
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+&lt;/blockquote&gt;
+</code></pre>
+<h2 id="html-abbr-for-abbreviations">HTML <code>&lt;abbr&gt;</code> for Abbreviations</h2>
+<p>The HTML <code>&lt;abbr&gt;</code> element defines an abbreviation or an acronym.</p>
+<pre><code>Example:
+&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+</code></pre>
 
