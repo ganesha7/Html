@@ -420,8 +420,7 @@ USA
 <pre><code>Example:
 &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;  
 &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;  
-&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;  
-  
+&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;    
 &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;  
 &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
 </code></pre>
