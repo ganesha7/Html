@@ -359,4 +359,127 @@ close to 5 million globally.
 <pre><code>Example:
 &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
 </code></pre>
+<h2 id="html-address-for-contact-information">HTML <code>&lt;address&gt;</code> for Contact Information</h2>
+<p>The HTML <code>&lt;address&gt;</code> element defines contact information (author/owner) of a document or an article.</p>
+<p>The <code>&lt;address&gt;</code> element is usually displayed in italic.</p>
+<pre><code>example:
+
+&lt;address&gt;  
+Written by John Doe.&lt;br&gt;  
+Visit us at:&lt;br&gt;  
+Example.com&lt;br&gt;  
+Box 564, Disneyland&lt;br&gt;  
+USA  
+&lt;/address&gt;
+</code></pre>
+<h2 id="html-cite-for-work-title">HTML <code>&lt;cite&gt;</code> for Work Title</h2>
+<p>The HTML  <code>&lt;cite&gt;</code>  element defines the title of a work.</p>
+<p>Browsers usually display  <code>&lt;cite&gt;</code>  elements in italic.</p>
+<pre><code>example:
+&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
+</code></pre>
+<h2 id="html-bdo-for-bi-directional-override">HTML <code>&lt;bdo&gt;</code> for Bi-Directional Override</h2>
+<p>The HTML  <code>&lt;bdo&gt;</code>  element defines bi-directional override.</p>
+<p>The  <code>&lt;bdo&gt;</code>  element is used to override the current text direction:</p>
+<pre><code>Example
+&lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
+</code></pre>
+<h1 id="html--comments">HTML  Comments</h1>
+<h2 id="html-comment-tags">HTML Comment Tags</h2>
+<p>Comment tags are used to insert comments in the HTML source code.</p>
+<pre><code>format:
+&lt;!-- This is a comment --&gt;  
+  
+&lt;p&gt;This is a paragraph.&lt;/p&gt;  
+  
+&lt;!-- Remember to add more information here --&gt;
+</code></pre>
+<h1 id="html--colors">HTML  Colors</h1>
+<h2 id="background-color">Background Color</h2>
+<p>You can set the background color for HTML elements:</p>
+<pre><code>Example:
+&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;  
+&lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+</code></pre>
+<h2 id="text-color">Text Color</h2>
+<p>You can set the color of text:</p>
+<pre><code>Example:
+&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;  
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;  
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;
+</code></pre>
+<h2 id="border-color">Border Color</h2>
+<p>You can set the color of borders:</p>
+<pre><code>example:
+&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;  
+&lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;  
+&lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+</code></pre>
+<h2 id="color-values">Color Values</h2>
+<p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+<pre><code>Example:
+&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;  
+&lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;  
+&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;  
+  
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;  
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+</code></pre>
+<h2 id="rgb-value">RGB Value</h2>
+<p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+<p>rgb(<em>red,</em>  <em>green</em>,  <em>blue</em>)</p>
+<pre><code>Example:
+&lt;h1 style="background-color:rgb(255, 0, 0);"&gt;rgb(255, 0, 0)&lt;/h1&gt;
+&lt;h1 style="background-color:rgb(0, 0, 255);"&gt;rgb(0, 0, 255)&lt;/h1&gt;
+&lt;h1 style="background-color:rgb(60, 179, 113);"&gt;rgb(60, 179, 113)&lt;/h1&gt;
+&lt;h1 style="background-color:rgb(238, 130, 238);"&gt;rgb(238, 130, 238)&lt;/h1&gt;
+&lt;h1 style="background-color:rgb(255, 165, 0);"&gt;rgb(255, 165, 0)&lt;/h1&gt;
+&lt;h1 style="background-color:rgb(106, 90, 205);"&gt;rgb(106, 90, 205)&lt;/h1&gt;
+</code></pre>
+<h2 id="hex-value">HEX Value</h2>
+<p>In HTML, a color can be specified using a hexadecimal value in the form:</p>
+<p>#<em>rrggbb</em></p>
+<pre><code>Example:
+&lt;h1 style="background-color:#ff0000;"&gt;#ff0000&lt;/h1&gt;
+&lt;h1 style="background-color:#0000ff;"&gt;#0000ff&lt;/h1&gt;
+&lt;h1 style="background-color:#3cb371;"&gt;#3cb371&lt;/h1&gt;
+&lt;h1 style="background-color:#ee82ee;"&gt;#ee82ee&lt;/h1&gt;
+&lt;h1 style="background-color:#ffa500;"&gt;#ffa500&lt;/h1&gt;
+&lt;h1 style="background-color:#6a5acd;"&gt;#6a5acd&lt;/h1&gt;
+</code></pre>
+<h2 id="hsl-value">HSL Value</h2>
+<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+<p>hsl(<em>hue</em>,  <em>saturation</em>,  <em>lightness</em>)</p>
+<pre><code>Example:
+&lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(240, 100%, 50%);"&gt;hsl(240, 100%, 50%)&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(147, 50%, 47%);"&gt;hsl(147, 50%, 47%)&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(300, 76%, 72%);"&gt;hsl(300, 76%, 72%)&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(39, 100%, 50%);"&gt;hsl(39, 100%, 50%)&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(248, 53%, 58%);"&gt;hsl(248, 53%, 58%)&lt;/h1&gt;
+</code></pre>
+<h2 id="rgba-value">RGBA Value</h2>
+<p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An RGBA color value is specified with:</p>
+<p>rgba(<em>red,</em>  <em>green</em>,  <em>blue, alpha</em>)</p>
+<pre><code>Example:
+&lt;h1 style="background-color:rgba(255, 99, 71, 0);"&gt;rgba(255, 99, 71, 0)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.2);"&gt;rgba(255, 99, 71, 0.2)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.4);"&gt;rgba(255, 99, 71, 0.4)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.6);"&gt;rgba(255, 99, 71, 0.6)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.8);"&gt;rgba(255, 99, 71, 0.8)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 1);"&gt;rgba(255, 99, 71, 1)&lt;/h1&gt;
+</code></pre>
+<h2 id="hsla-value">HSLA Value</h2>
+<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An HSLA color value is specified with:</p>
+<p>hsla(<em>hue,</em>  <em>saturation</em>,  <em>lightness, alpha</em>)</p>
+<pre><code>Example:
+'&lt;h1 style="background-color:hsla(9, 100%, 64%, 0);"&gt;hsla(9, 100%, 64%, 0)&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.2);"&gt;hsla(9, 100%, 64%, 0.2)&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.4);"&gt;hsla(9, 100%, 64%, 0.4)&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.6);"&gt;hsla(9, 100%, 64%, 0.6)&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.8);"&gt;hsla(9, 100%, 64%, 0.8)&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 1);"&gt;hsla(9, 100%, 64%, 1)&lt;/h1&gt;
+</code></pre>
 
