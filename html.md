@@ -299,4 +299,38 @@ Example:
 </ul>
 <h2 id="html-b-and-strong-elements">HTML <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code> Elements</h2>
 <p>The HTML <code>&lt;b&gt;</code> element defines <strong>bold</strong> text, without any extra importance.</p>
+<pre><code>example:
+&lt;b&gt;This text is bold&lt;/b&gt;
+&lt;strong&gt;This text is strong&lt;/strong&gt;
+</code></pre>
+<h2 id="html-i-and-em-elements">HTML <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code> Elements</h2>
+<p>The HTML <code>&lt;i&gt;</code> element defines <em>italic</em> text, without any extra importance.</p>
+<p>The HTML <code>&lt;em&gt;</code> element defines <em>emphasized</em> text, with added semantic importanc</p>
+<pre><code>&lt;i&gt;This text is italic&lt;/i&gt;
+&lt;em&gt;This text is emphasized&lt;/em&gt;
+</code></pre>
+<h2 id="html-small-element">HTML <code>&lt;small&gt;</code> Element</h2>
+<p>The HTML <code>&lt;small&gt;</code> element defines smaller text:</p>
+<pre><code>Example:
+&lt;h2&gt;HTML &lt;small&gt;Small&lt;/small&gt; Formatting&lt;/h2&gt;
+</code></pre>
+<h2 id="html-mark-element">HTML <code>&lt;mark&gt;</code> Element</h2>
+<p>The HTML <code>&lt;mark&gt;</code> element defines marked<br>
+or highlighted text:</p>
+<pre><code>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
+</code></pre>
+<h2 id="html-ins-element">HTML <code>&lt;ins&gt;</code> Element</h2>
+<p>The HTML <code>&lt;ins&gt;</code> element defines inserted (underline added) text.</p>
+<pre><code>Example:
+&lt;p&gt;My favorite &lt;ins&gt;color&lt;/ins&gt; is red.&lt;/p&gt;
+</code></pre>
+<h2 id="html-sub-element">HTML <code>&lt;sub&gt;</code> Element</h2>
+<p>The HTML <code>&lt;sub&gt;</code> element defines subscripted  (the text size  will be reduced and bottom of the ilne) text.</p>
+<pre><code>&lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;
+</code></pre>
+<h2 id="html-sup-element">HTML <code>&lt;sup&gt;</code> Element</h2>
+<p>The HTML <code>&lt;sup&gt;</code> element defines superscripted(the text size  will be reduced and top of the ilne) text.</p>
+<pre><code>Example:
+&lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
+</code></pre>
 
