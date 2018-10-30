@@ -96,4 +96,11 @@ All HTML documents consist of nested HTML elements.</p>
 &lt;/body&gt;  
 &lt;/html&gt;
 </code></pre>
+<h1 id="html--attributes">HTML  Attributes</h1>
+<ul>
+<li>All HTML elements can have  <strong>attributes</strong></li>
+<li>Attributes provide  <strong>additional   information</strong>  about an element</li>
+<li>Attributes are always specified in  <strong>the start tag</strong></li>
+<li>Attributes usually come in name/value pairs like:  <strong>name="value"</strong></li>
+</ul>
 
