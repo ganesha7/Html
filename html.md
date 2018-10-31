@@ -481,4 +481,310 @@ USA
 &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.8);"&gt;hsla(9, 100%, 64%, 0.8)&lt;/h1&gt;
 &lt;h1 style="background-color:hsla(9, 100%, 64%, 1);"&gt;hsla(9, 100%, 64%, 1)&lt;/h1&gt;
 </code></pre>
+<h1 id="html--styles---css">HTML  Styles - CSS</h1>
+<h2 id="styling-html-with-css">Styling HTML with CSS</h2>
+<p><strong>CSS</strong>  stands for  <strong>C</strong>ascading  <strong>S</strong>tyle  <strong>S</strong>heets.</p>
+<p>CSS describes  <strong>how HTML elements are to be displayed on screen, paper, or in other media</strong>.</p>
+<p>CSS  <strong>saves a lot of work</strong>. It can control the layout of multiple web pages all at once.</p>
+<p>CSS can be added to HTML elements in 3 ways:</p>
+<ul>
+<li><strong>Inline</strong>  - by using the style attribute in HTML elements</li>
+<li><strong>Internal</strong>  - by using a  <code>&lt;style&gt;</code>  element in the  <code>&lt;head&gt;</code>  section</li>
+<li><strong>External</strong>  - by using an external CSS file</li>
+</ul>
+<h2 id="inline-css">Inline CSS</h2>
+<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+<p>An inline CSS uses the style attribute of an HTML element.</p>
+<pre><code>Example:
+&lt;h1 style="color:blue;"&gt;This is a Blue Heading&lt;/h1&gt;
+</code></pre>
+<h2 id="internal-css">Internal CSS</h2>
+<p>An internal CSS is used to define a style for a single HTML page.</p>
+<p>An internal CSS is defined in the  <code>&lt;head&gt;</code>  section of an HTML page, within a  <code>&lt;style&gt;</code>  element:</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+body  {background-color:  powderblue;}  
+h1 {color:  blue;}  
+p {color:  red;}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;h1&gt;This is a heading&lt;/h1&gt;  
+&lt;p&gt;This is a paragraph.&lt;/p&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h2 id="external-css">External CSS</h2>
+<p>An external style sheet is used to define the style for many HTML pages.</p>
+<p><strong>With an external style sheet, you can change the look of an entire web site, by changing one file!</strong></p>
+<p>To use an external style sheet, add a link to it in the  <code>&lt;head&gt;</code>  section of the HTML page:</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;link rel="stylesheet"  href="styles.css"&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;h1&gt;This is a heading&lt;/h1&gt;  
+&lt;p&gt;This is a paragraph.&lt;/p&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<p>Here is how the “styles.css” looks:</p>
+<pre><code>body {  
+background-color:  powderblue;  
+}  
+h1 {  
+color:  blue;  
+}  
+p {  
+color:  red;  
+}
+</code></pre>
+<h2 id="css-fonts">CSS Fonts</h2>
+<p>The CSS  <code>color</code>  property defines the text color to be used.</p>
+<p>The CSS  <code>font-family</code>  property defines the font to be used.</p>
+<p>The CSS  <code>font-size</code> property defines the text size to be us</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+h1  {  
+color:  blue;  
+font-family:  verdana;  
+font-size:  300%;  
+}  
+p {  
+color:  red;  
+font-family:  courier;  
+font-size:  160%;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;h1&gt;This is a heading&lt;/h1&gt;  
+&lt;p&gt;This is a paragraph.&lt;/p&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h2 id="css-border">CSS Border</h2>
+<p>The CSS  <code>border</code>  property defines a border around an HTML element:</p>
+<pre><code>p {  
+border:  1px solid powderblue;  
+}
+</code></pre>
+<h2 id="css-padding">CSS Padding</h2>
+<p>The CSS  <code>padding</code>  property defines a padding (space) between the text and the border:</p>
+<pre><code>p {  
+border:  1px solid powderblue;  
+padding:  30px;  
+}
+</code></pre>
+<h2 id="css-margin">CSS Margin</h2>
+<p>The CSS  <code>margin</code>  property defines a margin (space) outside the border:</p>
+<pre><code>p {  
+border:  1px solid powderblue;  
+margin:  50px;  
+}
+</code></pre>
+<h2 id="the-id-attribute">The id Attribute</h2>
+<p>To define a specific style for one special element, add an  <code>id</code>  attribute to the element:</p>
+<pre><code>&lt;p id="p01"&gt;I am different&lt;/p&gt;
+</code></pre>
+<p>then define a style for the element with the specific id:</p>
+<pre><code>#p01  {  
+color:  blue;  
+}
+</code></pre>
+<h2 id="the-class-attribute">The class Attribute</h2>
+<p>To define a style for special types of elements, add a  <code>class</code>  attribute to the element:</p>
+<pre><code>&lt;p class="error"&gt;I am different&lt;/p&gt;
+</code></pre>
+<p>then define a style for the elements with the specific class:</p>
+<pre><code>p.error {  
+color:  red;  
+}
+</code></pre>
+<h2 id="external-references">External References</h2>
+<p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+<pre><code>&lt;link rel="stylesheet"  href="/html/styles.css"&gt;
+</code></pre>
+<h1 id="html--links">HTML  Links</h1>
+<h2 id="html-links---hyperlinks">HTML Links - Hyperlinks</h2>
+<p>HTML links are hyperlinks.</p>
+<p>You can click on a link and jump to another document</p>
+<h2 id="html-links---syntax">HTML Links - Syntax</h2>
+<p>In HTML, links are defined with the  <code>&lt;a&gt;</code>  tag:</p>
+<pre><code>&lt;a href="_url_"&gt;_link text_&lt;/a&gt;
+</code></pre>
+<p>example:</p>
+<pre><code>&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
+</code></pre>
+<h2 id="local-links">Local Links</h2>
+<p>The example above used an absolute URL (a full web address).</p>
+<p>A local link (link to the same web site) is specified with a relative URL (without <a href="https://www">https://www</a>…).</p>
+<pre><code>&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;
+</code></pre>
+<h2 id="html-link-colors">HTML Link Colors</h2>
+<p>By default, a link will appear like this (in all browsers):</p>
+<ul>
+<li>An unvisited link is underlined and blue</li>
+<li>A visited link is underlined and purple</li>
+<li>An active link is underlined and red</li>
+</ul>
+<p>You can change the default colors, by using CSS:</p>
+<pre><code>    &lt;style&gt;  
+    a:link {  
+    color:  green;  
+    background-color:  transparent;  
+       text-decoration:  none;  
+     }  
+
+     a:visited {  
+    color:  pink;  
+    background-color:  transparent;  
+    text-decoration:  none;  
+    }  
+
+    a:hover {  
+    color:  red;  
+    background-color:  transparent;  
+    text-decoration:  underline;  
+    }  
+
+     a:active {  
+     color:  yellow;  
+     background-color:  transparent;  
+     text-decoration:  underline;  
+    }  
+    &lt;/style&gt;
+</code></pre>
+<h2 id="html-links---the-target-attribute">HTML Links - The target Attribute</h2>
+<p>The  <code>target</code>  attribute specifies where to open the linked document.</p>
+<p>The target attribute can have one of the following values:</p>
+<ul>
+<li>
+<p>_blank - Opens the linked document in a new window or tab</p>
+</li>
+<li>
+<p>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</p>
+</li>
+<li>
+<p>_parent - Opens the linked document in the parent frame</p>
+</li>
+<li>
+<p>_top - Opens the linked document in the full body of the window</p>
+</li>
+<li>
+<p><em>framename</em>  - Opens the linked document in a named frame</p>
+<pre><code>&lt;a href="https://www.w3schools.com/"  target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="html-links---image-as-link">HTML Links - Image as Link</h2>
+<p>It is common to use images as links:</p>
+<pre><code>&lt;a href="default.asp"&gt;  
+&lt;img src="smiley.gif"  alt="HTML tutorial"  style="width:42px;height:42px;border:0;"&gt;  
+&lt;/a&gt;
+</code></pre>
+<h2 id="link-titles">Link Titles</h2>
+<p>The  <code>title</code>  attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<pre><code>&lt;a href="https://www.w3schools.com/html/"  title="Go to W3Schools HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;
+</code></pre>
+<h2 id="html-links---create-a-bookmark">HTML Links - Create a Bookmark</h2>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the bookmark.</p>
+<p>First, create a bookmark with the  <code>id</code>  attribute:</p>
+<pre><code>&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+</code></pre>
+<p>Then, add a link to the bookmark (“Jump to Chapter 4”), from within the same page:</p>
+<pre><code>&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</code></pre>
+<p>Or, add a link to the bookmark (“Jump to Chapter 4”), from another page:</p>
+<pre><code>&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</code></pre>
+<h1 id="html--images">HTML  Images</h1>
+<h2 id="html-images-syntax">HTML Images Syntax</h2>
+<p>In HTML, images are defined with the  <code>&lt;img&gt;</code>  tag.</p>
+<p>The  <code>&lt;img&gt;</code>  tag is empty, it contains attributes only, and does not have a closing tag.</p>
+<p>The  <code>src</code>  attribute specifies the URL (web address) of the image:</p>
+<pre><code>&lt;img src="_url_"&gt;
+</code></pre>
+<h2 id="the-alt-attribute-1">The alt Attribute</h2>
+<p>The  <code>alt</code>  attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+<pre><code>&lt;img src="img_chania.jpg"  alt="Flowers in Chania"&gt;
+</code></pre>
+<h2 id="image-size---width-and-height">Image Size - Width and Height</h2>
+<p>You can use the  <code>style</code>  attribute to specify the width and height of an image.</p>
+<pre><code>&lt;img src="img_girl.jpg"  alt="Girl in a jacket"  style="width:500px;height:600px;"&gt;
+</code></pre>
+<h2 id="width-and-height-or-style">Width and Height, or Style?</h2>
+<p>The  <code>width</code>,  <code>height</code>, and  <code>style</code>  attributes are valid in HTM</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+img  {  
+width:  100%;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;img src="html5.gif"  alt="HTML5 Icon"  width="128"  height="128"&gt;  
+&lt;img src="html5.gif"  alt="HTML5 Icon"  style="width:128px;height:128px;"&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h2 id="images-in-another-folder">Images in Another Folder</h2>
+<p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+<p>However, it is common to store images in a sub-folder. You must then include the folder name in the  <code>src</code>  attribute:</p>
+<pre><code>&lt;img src="/images/html5.gif"  alt="HTML5 Icon"  style="width:128px;height:128px;"&gt;
+</code></pre>
+<h2 id="images-on-another-server">Images on Another Server</h2>
+<p>Some web sites store their images on image servers.</p>
+<p>Actually, you can access images from any web address in the world:</p>
+<pre><code>&lt;img src="https://www.w3schools.com/images/w3schools_green.jpg"  alt="W3Schools.com"&gt;
+</code></pre>
+<h2 id="animated-images">Animated Images</h2>
+<p>HTML allows animated GIFs:</p>
+<pre><code>&lt;img src="programming.gif"  alt="Computer Man"  style="width:48px;height:48px;"&gt;
+</code></pre>
+<h2 id="image-as-a-link">Image as a Link</h2>
+<p>To use an image as a link, put the  <code>&lt;img&gt;</code>  tag inside the  <code>&lt;a&gt;</code>  tag:</p>
+<pre><code>&lt;a href="default.asp"&gt;  
+&lt;img src="smiley.gif"  alt="HTML tutorial"  style="width:42px;height:42px;border:0;"&gt;  
+&lt;/a&gt;
+</code></pre>
+<h2 id="image-floating">Image Floating</h2>
+<p>Use the CSS  <code>float</code>  property to let the image float to the right or to the left of a text:</p>
+<pre><code>&lt;p&gt;&lt;img src="smiley.gif"  alt="Smiley face"  style="float:right;width:42px;height:42px;"&gt;  
+The image will float to the right of the text.&lt;/p&gt;  
+  
+&lt;p&gt;&lt;img src="smiley.gif"  alt="Smiley face"  style="float:left;width:42px;height:42px;"&gt;  
+The image will float to the left of the text.&lt;/p&gt;
+</code></pre>
+<h2 id="image-maps">Image Maps</h2>
+<p>The  <code>&lt;map&gt;</code>  tag defines an image-map. An image-map is an image with clickable areas.</p>
+<p>In the image below, click on the computer, the phone, or the cup of coffee:</p>
+<pre><code>&lt;img src="workplace.jpg"  alt="Workplace"  usemap="#workmap"&gt;  
+  
+&lt;map name="workmap"&gt;  
+&lt;area shape="rect"  coords="34,44,270,350"  alt="Computer"  href="computer.htm"&gt;  
+&lt;area shape="rect"  coords="290,172,333,250"  alt="Phone"  href="phone.htm"&gt;  
+&lt;area shape="circle"  coords="337,300,44"  alt="Coffee"  href="coffee.htm"&gt;  
+&lt;/map&gt;
+</code></pre>
+<p>The  <code>name</code>  attribute of the  <code>&lt;map&gt;</code>  tag is associated with the  <code>&lt;img&gt;</code>'s usemap attribute and creates a relationship between the image and the map.</p>
+<p>The  <code>&lt;map&gt;</code>  element contains a number of  <code>&lt;area&gt;</code>  tags, that define the clickable areas in the image-map.</p>
 
