@@ -787,4 +787,32 @@ The image will float to the left of the text.&lt;/p&gt;
 </code></pre>
 <p>The  <code>name</code>  attribute of the  <code>&lt;map&gt;</code>  tag is associated with the  <code>&lt;img&gt;</code>'s usemap attribute and creates a relationship between the image and the map.</p>
 <p>The  <code>&lt;map&gt;</code>  element contains a number of  <code>&lt;area&gt;</code>  tags, that define the clickable areas in the image-map.</p>
+<h2 id="background-image">Background Image</h2>
+<p>To add a background image on an HTML element, use the CSS property <code>background-image</code>:</p>
+<pre><code>&lt;body style="background-image:url('clouds.jpg')"&gt;  
+  
+&lt;h2&gt;Background Image&lt;/h2&gt;  
+  
+&lt;/body&gt;
+</code></pre>
+<p>another one example:</p>
+<pre><code>&lt;body&gt; 
+&lt;p style="background-image:url('clouds.jpg')"&gt;  
+...  
+&lt;/p&gt;  
+  
+&lt;/body&gt;
+</code></pre>
+<h2 id="the-picture-element">The <code>&lt;picture&gt;</code> Element</h2>
+<p>HTML5 introduced the  <code>&lt;picture&gt;</code>  element to add more flexibility when specifying image resources.</p>
+<p>The  <code>&lt;picture&gt;</code>  element contains a number of  elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.</p>
+<p>Each  <code>&lt;source&gt;</code>  element have attributes describing when their image is the most suitable.</p>
+<p>The browser will use the first  <code>&lt;source&gt;</code>  element with matching attribute values, and ignore any following  <code>&lt;source&gt;</code>elements.</p>
+<pre><code>&lt;picture&gt;  
+&lt;source media="(min-width: 650px)"  srcset="img_pink_flowers.jpg"&gt;  
+&lt;source media="(min-width: 465px)"  srcset="img_white_flower.jpg"&gt;  
+&lt;img src="img_orange_flowers.jpg"  alt="Flowers"  style="width:auto;"&gt;  
+&lt;/picture&gt;
+</code></pre>
+<h1 id="html--tables">HTML  Tables</h1>
 
