@@ -815,4 +815,573 @@ The image will float to the left of the text.&lt;/p&gt;
 &lt;/picture&gt;
 </code></pre>
 <h1 id="html--tables">HTML  Tables</h1>
+<h2 id="defining-an-html-table">Defining an HTML Table</h2>
+<p>An HTML table is defined with the  <code>&lt;table&gt;</code>  tag.</p>
+<p>Each table row is defined with the  <code>&lt;tr&gt;</code>  tag. A table header is defined with the  <code>&lt;th&gt;</code>  tag. By default, table headings are bold and centered. A table data/cell is defined with the  <code>&lt;td&gt;</code>  tag.</p>
+<pre><code>Example:
+
+&lt;table style="width:100%"&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Firstname&lt;/th&gt;  
+&lt;th&gt;Lastname&lt;/th&gt;  
+&lt;th&gt;Age&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Jill&lt;/td&gt;  
+&lt;td&gt;Smith&lt;/td&gt;  
+&lt;td&gt;50&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Eve&lt;/td&gt;  
+&lt;td&gt;Jackson&lt;/td&gt;  
+&lt;td&gt;94&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</code></pre>
+<h2 id="html-table---adding-a-border">HTML Table - Adding a Border</h2>
+<p>If you do not specify a border for the table, it will be displayed without borders.</p>
+<p>A border is set using the CSS  <code>border</code>  property:</p>
+<pre><code>Example:
+table, th, td {  
+border:  1px solid black;  
+}
+</code></pre>
+<h2 id="html-table---collapsed-borders">HTML Table - Collapsed Borders</h2>
+<p>If you want the borders to collapse into one border, add the CSS  <code>border-collapse</code>  property:</p>
+<pre><code>Example:
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</code></pre>
+<h2 id="html-table---adding-cell-padding">HTML Table - Adding Cell Padding</h2>
+<p>Cell padding specifies the space between the cell content and its borders.</p>
+<p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+<p>To set the padding, use the CSS  <code>padding</code>  property:</p>
+<pre><code>Example:
+th, td {  
+padding:  15px;  
+}
+</code></pre>
+<h2 id="html-table---left-align-headings">HTML Table - Left-align Headings</h2>
+<p>By default, table headings are bold and centered.</p>
+<p>To left-align the table headings, use the CSS  <code>text-align</code>  property:</p>
+<pre><code>th {  
+text-align:  left;  
+}
+</code></pre>
+<h2 id="html-table---adding-border-spacing">HTML Table - Adding Border Spacing</h2>
+<p>Border spacing specifies the space between the cells.</p>
+<p>To set the border spacing for a table, use the CSS  <code>border-spacing</code>  property:</p>
+<pre><code>table {  
+border-spacing:  5px;  
+}
+</code></pre>
+<h2 id="html-table---cells-that-span-many-columns">HTML Table - Cells that Span Many Columns</h2>
+<p>To make a cell span more than one column, use the  <code>colspan</code>  attribute:</p>
+<pre><code>&lt;table style="width:100%"&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Name&lt;/th&gt;  
+&lt;th colspan="2"&gt;Telephone&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Bill Gates&lt;/td&gt;  
+&lt;td&gt;55577854&lt;/td&gt;  
+&lt;td&gt;55577855&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</code></pre>
+<h2 id="html-table---cells-that-span-many-rows">HTML Table - Cells that Span Many Rows</h2>
+<p>To make a cell span more than one row, use the  <code>rowspan</code>  attribute:</p>
+<pre><code>&lt;table style="width:100%"&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Name:&lt;/th&gt;  
+&lt;td&gt;Bill Gates&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;  
+&lt;td&gt;55577854&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;55577855&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</code></pre>
+<h2 id="html-table---adding-a-caption">HTML Table - Adding a Caption</h2>
+<p>To add a caption to a table, use the  <code>&lt;caption&gt;</code>  tag:</p>
+<pre><code>&lt;table style="width:100%"&gt;  
+&lt;caption&gt;Monthly savings&lt;/caption&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Month&lt;/th&gt;  
+&lt;th&gt;Savings&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;January&lt;/td&gt;  
+&lt;td&gt;$100&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;February&lt;/td&gt;  
+&lt;td&gt;$50&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</code></pre>
+<h2 id="a-special-style-for-one-table">A Special Style for One Table</h2>
+<p>To define a special style for a special table, add an  <code>id</code>  attribute to the table:</p>
+<pre><code>&lt;table id="t01"&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Firstname&lt;/th&gt;  
+&lt;th&gt;Lastname&lt;/th&gt;  
+&lt;th&gt;Age&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Eve&lt;/td&gt;  
+&lt;td&gt;Jackson&lt;/td&gt;  
+&lt;td&gt;94&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</code></pre>
+<p>Now you can define a special style for this table:</p>
+<pre><code>table#t01  {  
+width:  100%;  
+background-color:  #f1f1c1;  
+}
+</code></pre>
+<p>add more styles:</p>
+<pre><code>table#t01 tr:nth-child(even) {  
+background-color:  #eee;  
+}  
+table#t01 tr:nth-child(odd) {  
+background-color:  #fff;  
+}  
+table#t01 th {  
+color:  white;  
+background-color:  black;  
+}
+</code></pre>
+<h1 id="html--lists">HTML  Lists</h1>
+<h2 id="unordered-html-list">Unordered HTML List</h2>
+<p>An unordered list starts with the  <code>&lt;ul&gt;</code>  tag. Each list item starts with the  <code>&lt;li&gt;</code>  tag.</p>
+<p>The list items will be marked with bullets (small black circles) by default:</p>
+<pre><code>&lt;ul&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Tea&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ul&gt;
+</code></pre>
+<h3 id="unordered-html-list---choose-list-item-marker">Unordered HTML List - Choose List Item Marker</h3>
+<p>The CSS  <code>list-style-type</code>  property is used to define the style of the list item marker:</p>
+<ul>
+<li>
+<p>disc</p>
+</li>
+<li>
+<p>square</p>
+</li>
+<li>
+<p>circle</p>
+</li>
+<li>
+<p>none</p>
+<pre><code>&lt;ul style="list-style-type:disc"&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="ordered-html-list">Ordered HTML List</h3>
+<p>An ordered list starts with the  <code>&lt;ol&gt;</code>  tag. Each list item starts with the  <code>&lt;li&gt;</code>  tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+<pre><code>&lt;ol&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Tea&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ol&gt;
+</code></pre>
+<h2 id="ordered-html-list---the-type-attribute">Ordered HTML List - The Type Attribute</h2>
+<p>The  <code>type</code>  attribute of the  <code>&lt;ol&gt;</code>  tag, defines the type of the list item marker:</p>
+<ol>
+<li>
+<p>type=“1”</p>
+</li>
+<li>
+<p>type=“A”</p>
+</li>
+<li>
+<p>type=“a”</p>
+</li>
+<li>
+<p>type=“I”</p>
+</li>
+<li>
+<p>type=“i”</p>
+<pre><code>&lt;ol type="1"&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Tea&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ol&gt;
+</code></pre>
+</li>
+</ol>
+<h2 id="html-description-lists">HTML Description Lists</h2>
+<p>HTML also supports description lists.</p>
+<p>A description list is a list of terms, with a description of each term.</p>
+<p>The  <code>&lt;dl&gt;</code>  tag defines the description list, the  <code>&lt;dt&gt;</code>  tag defines the term (name), and the  <code>&lt;dd&gt;</code>  tag describes each term:</p>
+<pre><code>&lt;dl&gt;  
+&lt;dt&gt;Coffee&lt;/dt&gt;  
+&lt;dd&gt;- black hot drink&lt;/dd&gt;  
+&lt;dt&gt;Milk&lt;/dt&gt;  
+&lt;dd&gt;- white cold drink&lt;/dd&gt;  
+&lt;/dl&gt;
+</code></pre>
+<h2 id="nested-html-lists">Nested HTML Lists</h2>
+<p>List can be nested (lists inside lists):</p>
+<pre><code>&lt;ul&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Tea  
+&lt;ul&gt;  
+&lt;li&gt;Black tea&lt;/li&gt;  
+&lt;li&gt;Green tea&lt;/li&gt;  
+&lt;/ul&gt;  
+&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ul&gt;
+</code></pre>
+<h2 id="control-list-counting">Control List Counting</h2>
+<p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the  <code>start</code>  attribute:</p>
+<pre><code>&lt;ol start="50"&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Tea&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ol&gt;
+</code></pre>
+<h2 id="horizontal-list-with-css">Horizontal List with CSS</h2>
+<p>HTML lists can be styled in many different ways with CSS.</p>
+<p>One popular way is to style a list horizontally, to create a navigation menu:</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+ul  {  
+list-style-type:  none;  
+margin:  0;  
+padding:  0;  
+overflow:  hidden;  
+background-color:  #333333;  
+}  
+  
+li  {  
+float:  left;  
+}  
+  
+li a  {  
+display:  block;  
+color:  white;  
+text-align:  center;  
+padding:  16px;  
+text-decoration:  none;  
+}  
+  
+li a:hover  {  
+background-color:  #111111;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;ul&gt;  
+&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;  
+&lt;/ul&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h1 id="html--block-and-inline-elements">HTML  Block and Inline Elements</h1>
+<h2 id="block-level-elements">Block-level Elements</h2>
+<p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+<p>The <code>&lt;div&gt;</code> element is a block-level element.</p>
+<pre><code>&lt;div&gt;Hello&lt;/div&gt;  
+&lt;div&gt;World&lt;/div&gt;
+</code></pre>
+<p>Block level elements in HTML:</p>
+<pre><code>[&lt;address&gt;][&lt;article&gt;][&lt;aside&gt;][&lt;blockquote&gt;][&lt;canvas&gt;][&lt;dd&gt;][&lt;div&gt;]
+[&lt;dl&gt;][&lt;dt&gt;][&lt;fieldset&gt;][&lt;figcaption&gt;][&lt;figure&gt;][&lt;footer&gt;][&lt;form&gt;][&lt;h1&gt;-&lt;h6&gt;][&lt;header&gt;]
+[&lt;hr&gt;][&lt;li&gt;][&lt;main&gt;]
+[&lt;nav&gt;][&lt;noscript&gt;]
+[&lt;ol&gt;][&lt;output&gt;]
+[&lt;p&gt;][&lt;pre&gt;]
+[&lt;section&gt;][&lt;table&gt;]
+[&lt;tfoot&gt;][&lt;ul&gt;][&lt;video&gt;]
+</code></pre>
+<h2 id="inline-elements">Inline Elements</h2>
+<p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+<p>This is  an inline <code>&lt;span&gt;</code> element inside  a paragraph.</p>
+<pre><code>&lt;span&gt;Hello&lt;/span&gt;  
+&lt;span&gt;World&lt;/span&gt;
+</code></pre>
+<p>Inline elements in HTML:</p>
+<pre><code>[&lt;a&gt;]
+[&lt;abbr&gt;]
+[&lt;acronym&gt;]
+[&lt;b&gt;]
+[&lt;bdo&gt;]
+[&lt;big&gt;]
+[&lt;br&gt;]
+[&lt;button&gt;]
+[&lt;cite&gt;]
+[&lt;code&gt;]
+[&lt;dfn&gt;]
+[&lt;em&gt;
+[&lt;i&gt;]
+[&lt;img&gt;]
+[&lt;input&gt;]
+[&lt;kbd&gt;]
+[&lt;label&gt;]
+[&lt;map&gt;]
+[&lt;object&gt;]
+[&lt;q&gt;]
+[&lt;samp&gt;]
+[&lt;script&gt;]
+[&lt;select&gt;]
+[&lt;small&gt;]
+[&lt;span&gt;]
+[&lt;strong&gt;]
+[&lt;sub&gt;]
+[&lt;sup&gt;]
+[&lt;textarea&gt;]
+[&lt;var&gt;]
+</code></pre>
+<h2 id="the-div-element">The <code>&lt;div&gt;</code> Element</h2>
+<p>The  <code>&lt;div&gt;</code>  element is often used as a container for other HTML elements.</p>
+<p>The  <code>&lt;div&gt;</code>  element has no required attributes, but  <code>style</code>,  <code>class</code>  and  <code>id</code>  are common.</p>
+<p>When used together with CSS, the  <code>&lt;div&gt;</code>  element can be used to style blocks of content:</p>
+<pre><code>&lt;div style="background-color:black;color:white;padding:20px;"&gt;  
+&lt;h2&gt;London&lt;/h2&gt;  
+&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;  
+&lt;/div&gt;
+</code></pre>
+<h2 id="the-span-element">The <span> Element</span></h2>
+<p>The  <code>&lt;span&gt;</code>  element is often used as a container for some text.</p>
+<p>The  <code>&lt;span&gt;</code>  element has no required attributes, but  <code>style</code>,  <code>class</code>  and  <code>id</code>  are common.</p>
+<p>When used together with CSS, the  <code>&lt;span&gt;</code>  element can be used to style parts of the text:</p>
+<pre><code>&lt;h1&gt;My &lt;span style="color:red"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+</code></pre>
+<h2 id="html-grouping-tags">HTML Grouping Tags</h2>
+<p><code>&lt;div&gt;</code> Defines a section in a document (block-level)<br>
+<code>&lt;span&gt;</code>Defines a section in a document (inline)</p>
+<h1 id="html--the-class-attribute">HTML  The class Attribute</h1>
+<h2 id="using-the-class-attribute">Using The class Attribute</h2>
+<p>The HTML  <code>class</code>  attribute is used to define equal styles for elements with the same class name.</p>
+<p>So, all HTML elements with the same  <code>class</code>  attribute will have the same format and style.</p>
+<p>Here we have three  <code>&lt;div&gt;</code>  elements that point to the same class name:</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+.cities  {  
+background-color:  black;  
+color:  white;  
+margin:  20px;  
+padding:  20px;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;div class="cities"&gt;  
+&lt;h2&gt;London&lt;/h2&gt;  
+&lt;p&gt;London is the capital of England.&lt;/p&gt;  
+&lt;/div&gt;  
+  
+&lt;div class="cities"&gt;  
+&lt;h2&gt;Paris&lt;/h2&gt;  
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;  
+&lt;/div&gt;  
+  
+&lt;div class="cities"&gt;  
+&lt;h2&gt;Tokyo&lt;/h2&gt;  
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;  
+&lt;/div&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h2 id="using-the-class-attribute-on-inline-elements">Using The class Attribute on Inline Elements</h2>
+<p>The HTML  <code>class</code>  attribute can also be used on inline elements:</p>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+span.note  {  
+font-size:  120%;  
+color:  red;  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+  
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;  
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;  
+  
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+<h2 id="select-elements-with-a-specific-class">Select Elements With a Specific Class</h2>
+<p>In CSS, to select elements with a specific class, write a period (.) character, followed by the name of the class:</p>
+<pre><code>&lt;style&gt;  
+**.city**  {  
+background-color:  tomato;  
+color:  white;  
+padding:  10px;  
+}  
+&lt;/style&gt;  
+  
+&lt;h2 **class="city"**&gt;London&lt;/h2&gt;  
+&lt;p&gt;London is the capital of England.&lt;/p&gt;  
+  
+&lt;h2 **class="city"**&gt;Paris&lt;/h2&gt;  
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;  
+  
+&lt;h2 **class="city"**&gt;Tokyo&lt;/h2&gt;  
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+</code></pre>
+<h2 id="multiple-classes">Multiple Classes</h2>
+<p>HTML elements can have more than one class name, each class name must be separated by a space.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;style&gt;
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+} 
+
+.main {
+    text-align: center;
+}
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Multiple Classes&lt;/h2&gt;
+&lt;p&gt;All three headers have the class name "city". In addition, London also have the class name "main", which center-aligns the text.&lt;/p&gt;
+
+&lt;h2 class="city main"&gt;London&lt;/h2&gt;
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="different-tags-can-share-same-class">Different Tags Can Share Same Class</h2>
+<p>Different tags, like  <code>&lt;h2&gt;</code>  and  <code>&lt;p&gt;</code>, can have the same class name and thereby share the same style:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;style&gt;
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Same Class, Different Tag&lt;/h2&gt;
+&lt;p&gt;Even if the two elements do not have the same tag name, they can have the same class name, and get the same styling:&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p class="city"&gt;Paris is the capital of France.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h1 id="html--the-id-attribute">HTML  The id Attribute</h1>
+<p>'----------</p>
+<h2 id="using-the-id-attribute">Using The id Attribute</h2>
+<p>The  <code>id</code>  attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).</p>
+<p>The id value can be used by CSS and JavaScript to perform certain tasks for a unique element with the specified id value.</p>
+<p>In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:</p>
+<p>Use CSS to style an element with the id “myHeader”:</p>
+<pre><code>&lt;style&gt;  
+**#myHeader**  {  
+background-color:  lightblue;  
+color:  black;  
+padding:  40px;  
+text-align:  center;  
+}  
+&lt;/style&gt;  
+  
+&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;
+</code></pre>
+<h2 id="difference-between-class-and-id">Difference Between Class and ID</h2>
+<p>An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:</p>
+<pre><code>&lt;style&gt;  
+/* Style the element with the id "myHeader" */  
+**#myHeader**  {  
+background-color:  lightblue;  
+color:  black;  
+padding:  40px;  
+text-align:  center;  
+}  
+  
+/* Style all elements with the class name "city" */  
+**.city** {  
+background-color:  tomato;  
+color:  white;  
+padding:  10px;  
+}  
+&lt;/style&gt;  
+  
+&lt;!-- A unique element --&gt;  
+&lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt;  
+  
+&lt;!-- Multiple similar elements --&gt;  
+&lt;h2 class="city"&gt;London&lt;/h2&gt;  
+&lt;p&gt;London is the capital of England.&lt;/p&gt;  
+  
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;  
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;  
+  
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;  
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+</code></pre>
+<h2 id="bookmarks-with-id-and-links">Bookmarks with ID and Links</h2>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the bookmark.</p>
+<p>First, create a bookmark with the  <code>id</code>  attribute:</p>
+<pre><code>&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+</code></pre>
+<p>Then, add a link to the bookmark (“Jump to Chapter 4”), from within the same page:</p>
+<pre><code>&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</code></pre>
+<p>Or, add a link to the bookmark (“Jump to Chapter 4”), from another page:</p>
+<pre><code>&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</code></pre>
+<h1 id="html--iframes">HTML  Iframes</h1>
+<h2 id="iframe-syntax">Iframe Syntax</h2>
+<p>An HTML iframe is defined with the  <code>&lt;iframe&gt;</code>  tag:</p>
+<pre><code>&lt;iframe src="_URL_"&gt;&lt;/iframe&gt;
+</code></pre>
+<p>The  <code>src</code>  attribute specifies the URL (web address) of the inline frame page.</p>
+<h2 id="iframe---set-height-and-width">Iframe - Set Height and Width</h2>
+<p>Use the  <code>height</code>  and  <code>width</code>  attributes to specify the size of the iframe.</p>
+<p>The attribute values are specified in pixels by default, but they can also be in percent (like “80%”).</p>
+<pre><code>&lt;iframe src="demo_iframe.htm"  height="200"  width="300"&gt;
+</code></pre>
+<h2 id="iframe---remove-the-border">Iframe - Remove the Border</h2>
+<p>By default, an iframe has a border around it.</p>
+<p>To remove the border, add the  <code>style</code>  attribute and use the CSS  <code>border</code>  property:</p>
+<pre><code>&lt;iframe src="demo_iframe.htm"  style="border:none;"&gt;&lt;/iframe&gt;
+</code></pre>
+<h2 id="iframe---target-for-a-link">Iframe - Target for a Link</h2>
+<p>An iframe can be used as the target frame for a link.</p>
+<p>The  <code>target</code>  attribute of the link must refer to the  <code>name</code>  attribute of the iframe:</p>
+<pre><code>&lt;iframe src="demo_iframe.htm"  name="iframe_a"&gt;&lt;/iframe&gt;  
+  
+&lt;p&gt;&lt;a href="https://www.w3schools.com"  target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;
+</code></pre>
 
